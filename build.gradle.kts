@@ -14,7 +14,7 @@ plugins {
 	alias(libs.plugins.ksp.plugin)
 }
 
-group = "template"
+group = "io.github.smalauncher"
 version = "1.0-SNAPSHOT"
 
 dependencies {
@@ -54,12 +54,12 @@ kordEx {
 		// See https://docs.kordex.dev/data-collection.html
 		dataCollection(DataCollection.Standard)
 
-		mainClass = "template.AppKt"
+		mainClass = "io.github.smalauncher.mirrormaster.AppKt"
 	}
 
 	i18n {
-		classPackage = "template.i18n"
-		translationBundle = "template.strings"
+		classPackage = "io.github.smalauncher.mirrormaster.i18n"
+		translationBundle = "mirrormaster.strings"
 	}
 }
 
