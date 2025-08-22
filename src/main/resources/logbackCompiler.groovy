@@ -1,5 +1,5 @@
 importsAcceptList = [
-	'io.github.smalauncher.mirrormaster.util.SentryLogsAppender',
+	'io.sentry.logback.SentryAppender',
 
 	'ch.qos.logback.core.testUtil.SampleConverter',
 

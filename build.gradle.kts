@@ -29,6 +29,10 @@ dependencies {
 	implementation(libs.logback)
 	implementation(libs.logback.groovy)
 	implementation(libs.logging)
+
+	// Sentry
+	implementation(libs.sentry)
+	implementation(libs.sentry.logback)
 }
 
 // Configure distributions plugin
