@@ -1,5 +1,6 @@
 import ch.qos.logback.core.joran.spi.ConsoleTarget
 import ch.qos.logback.core.ConsoleAppender
+import io.github.smalauncher.mirrormaster.util.SentryLogsAppender
 
 def defaultLevel = INFO
 def defaultTarget = ConsoleTarget.SystemErr
@@ -24,4 +25,12 @@ appender("CONSOLE", ConsoleAppender) {
 	target = defaultTarget
 }
 
+appender("SENTRY", SentryLogsAppender)
+
 root(defaultLevel, ["CONSOLE"])
+
+logger(
+	"io.github.smalauncher.mirrormaster.extensions.MirrorExtension",
+	defaultLevel,
+	["SENTRY"]
+)

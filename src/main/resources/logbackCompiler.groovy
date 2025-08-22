@@ -1,4 +1,6 @@
 importsAcceptList = [
+	'io.github.smalauncher.mirrormaster.util.SentryLogsAppender',
+
 	'ch.qos.logback.core.testUtil.SampleConverter',
 
 	'ch.qos.logback.core.testUtil.StringListAppender',
