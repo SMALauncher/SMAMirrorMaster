@@ -27,6 +27,7 @@ class MirrorExtension : Extension() {
 				name = Translations.Commands.Mirror.Log.name
 				description = Translations.Commands.Mirror.Log.description
 
+				@Suppress("TooGenericExceptionThrown", "TooGenericExceptionCaught")
 				action {
 					logger.info { arguments.message }
 
