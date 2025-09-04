@@ -34,7 +34,7 @@ appender("SENTRY", SentryAppender) {
 root(defaultLevel, ["CONSOLE"])
 
 logger(
-	"io.github.smalauncher.mirrormaster.extensions.MirrorExtension",
+	"io.github.smalauncher.mirrormaster.extensions.mirror.MirrorExtension",
 	defaultLevel,
 	["SENTRY"]
 )
