@@ -114,3 +114,6 @@ data/
 
 # Env vars - don't commit this!
 .env
+
+# Random IntelliJ plugins
+.idea/checkstyle-idea.xml

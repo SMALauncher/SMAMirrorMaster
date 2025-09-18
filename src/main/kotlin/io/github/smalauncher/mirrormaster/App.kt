@@ -10,8 +10,10 @@ import io.sentry.SentryLevel
 import java.io.File
 
 val TEST_SERVER_ID = Snowflake(
-	env("TEST_SERVER").toLong()
+	env("TEST_SERVER").toULong()
 )
+
+val MIRROR_CHANNEL_IDS = envOfSnowflakeSet("MIRROR_CHANNEL_IDS")
 
 private val TOKEN = env("TOKEN")
 
