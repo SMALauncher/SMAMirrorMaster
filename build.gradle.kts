@@ -12,6 +12,8 @@ plugins {
 	alias(libs.plugins.kordex.docker)
 	alias(libs.plugins.kordex.plugin)
 	alias(libs.plugins.ksp.plugin)
+
+	alias(libs.plugins.sentry.plugin)
 }
 
 group = "io.github.smalauncher"
@@ -29,10 +31,6 @@ dependencies {
 	implementation(libs.logback)
 	implementation(libs.logback.groovy)
 	implementation(libs.logging)
-
-	// Sentry
-	implementation(libs.sentry)
-	implementation(libs.sentry.logback)
 }
 
 // Configure distributions plugin
@@ -129,5 +127,15 @@ docker {
 
 		comment("Run the distribution start script")
 		entryPointExec("/dist/out/${project.name}-${project.version}/bin/$name")
+	}
+}
+
+// Configure Sentry plugin
+sentry {
+	// TODO configure source context auth junk
+	//includeSourceContext = true
+
+	autoInstallation {
+		sentryVersion = libs.versions.sentry.asProvider()
 	}
 }

@@ -12,6 +12,7 @@ logging = "7.0.13"
 kordex-gradle = "1.7.3"
 kordex = "2.3.5-SNAPSHOT"
 sentry = "8.21.1"
+sentry-gradle = "5.8.0"
 
 [libraries]
 detekt = { module = "io.gitlab.arturbosch.detekt:detekt-formatting", version.ref = "detekt" }
@@ -22,8 +23,6 @@ kx-ser = { module = "org.jetbrains.kotlinx:kotlinx-serialization-core", version.
 logback = { module = "ch.qos.logback:logback-classic", version.ref = "logback" }
 logback-groovy = { module = "io.github.virtualdogbert:logback-groovy-config", version.ref = "logback-groovy" }
 logging = { module = "io.github.oshai:kotlin-logging", version.ref = "logging" }
-sentry = { module = "io.sentry:sentry", version.ref = "sentry" }
-sentry-logback = { module = "io.sentry:sentry-logback", version.ref = "sentry" }
 
 [plugins]
 detekt = { id = "io.gitlab.arturbosch.detekt", version.ref = "detekt" }
@@ -34,3 +33,5 @@ kotlin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", versi
 kordex-docker = { id = "dev.kordex.gradle.docker", version.ref = "kordex-gradle" }
 kordex-plugin = { id = "dev.kordex.gradle.kordex", version.ref = "kordex-gradle" }
 ksp-plugin = { id = "com.google.devtools.ksp", version.ref = "ksp" }
+
+sentry-plugin = { id = "io.sentry.jvm.gradle", version.ref = "sentry-gradle" }
