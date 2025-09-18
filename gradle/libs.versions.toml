@@ -11,7 +11,7 @@ logback-groovy = "1.14.5"
 logging = "7.0.13"
 kordex-gradle = "1.7.3"
 kordex = "2.3.5-SNAPSHOT"
-sentry = "8.19.1"
+sentry = "8.21.1"
 
 [libraries]
 detekt = { module = "io.gitlab.arturbosch.detekt:detekt-formatting", version.ref = "detekt" }
