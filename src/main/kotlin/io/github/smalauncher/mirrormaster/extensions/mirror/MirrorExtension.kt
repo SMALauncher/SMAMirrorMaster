@@ -1,10 +1,7 @@
 package io.github.smalauncher.mirrormaster.extensions.mirror
 
-import dev.kord.common.entity.ChannelType
 import dev.kord.core.event.message.MessageCreateEvent
 import dev.kord.core.event.message.MessageUpdateEvent
-import dev.kordex.core.checks.channelFor
-import dev.kordex.core.checks.channelType
 import dev.kordex.core.commands.Arguments
 import dev.kordex.core.commands.application.slash.publicSubCommand
 import dev.kordex.core.commands.converters.impl.message

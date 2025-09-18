@@ -15,7 +15,8 @@ fun envOfSnowflakeSet(name: String): Set<Snowflake> {
 		} catch (e: NumberFormatException) {
 			throw IllegalStateException(
 				"Environmental variable '$name' has an invalid value.",
-				e)
+				e
+			)
 		}
 	}
 

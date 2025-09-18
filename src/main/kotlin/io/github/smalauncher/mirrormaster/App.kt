@@ -4,8 +4,8 @@ import dev.kord.common.entity.Snowflake
 import dev.kordex.core.ExtensibleBot
 import dev.kordex.core.utils.env
 import dev.kordex.core.utils.envOrNull
-import io.github.smalauncher.mirrormaster.extensions.mirror.MirrorExtension
 import io.github.smalauncher.mirrormaster.extensions.ShutdownExtension
+import io.github.smalauncher.mirrormaster.extensions.mirror.MirrorExtension
 import io.sentry.SentryLevel
 import java.io.File
 
