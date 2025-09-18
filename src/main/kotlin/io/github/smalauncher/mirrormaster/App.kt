@@ -13,7 +13,7 @@ val TEST_SERVER_ID = Snowflake(
 	env("TEST_SERVER").toULong()
 )
 
-val MIRROR_CHANNEL_IDS = envOfSnowflakeSet("MIRROR_CHANNEL_IDS")
+val MIRROR_CHANNEL_IDS = envOfSnowflakeSet("MIRROR_CHANNELS")
 
 private val TOKEN = env("TOKEN")
 
