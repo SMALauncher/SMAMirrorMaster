@@ -25,6 +25,9 @@ logback = { module = "ch.qos.logback:logback-classic", version.ref = "logback" }
 logback-groovy = { module = "io.github.virtualdogbert:logback-groovy-config", version.ref = "logback-groovy" }
 logging = { module = "io.github.oshai:kotlin-logging", version.ref = "logging" }
 
+sentry = { module = "io.sentry:sentry", version.ref = "sentry" }
+sentry-logback = { module = "io.sentry:sentry-logback", version.ref = "sentry" }
+
 [plugins]
 detekt = { id = "io.gitlab.arturbosch.detekt", version.ref = "detekt" }
 

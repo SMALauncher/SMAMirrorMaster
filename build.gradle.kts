@@ -31,6 +31,10 @@ dependencies {
 	implementation(libs.logback)
 	implementation(libs.logback.groovy)
 	implementation(libs.logging)
+
+	// Sentry
+	implementation(libs.sentry)
+	implementation(libs.sentry.logback)
 }
 
 // Configure distributions plugin
@@ -136,6 +140,6 @@ sentry {
 	//includeSourceContext = true
 
 	autoInstallation {
-		sentryVersion = libs.versions.sentry.asProvider()
+		enabled = false
 	}
 }
