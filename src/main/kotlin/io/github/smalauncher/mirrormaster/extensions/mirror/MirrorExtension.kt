@@ -2,6 +2,8 @@ package io.github.smalauncher.mirrormaster.extensions.mirror
 
 import dev.kord.core.event.message.MessageCreateEvent
 import dev.kord.core.event.message.MessageUpdateEvent
+import dev.kord.gateway.Intent
+import dev.kord.gateway.PrivilegedIntent
 import dev.kordex.core.commands.Arguments
 import dev.kordex.core.commands.application.slash.publicSubCommand
 import dev.kordex.core.commands.converters.impl.message
@@ -19,8 +21,12 @@ class MirrorExtension : Extension() {
 
 	val logger = KotlinLogging.logger {}
 
+	@OptIn(PrivilegedIntent::class)
 	override suspend fun setup() {
 		// TODO uh. everything.
+
+		intents += Intent.GuildMessages
+		intents += Intent.MessageContent
 
 		event<MessageCreateEvent> {
 			check {
