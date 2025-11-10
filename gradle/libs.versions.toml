@@ -13,7 +13,7 @@ kordex-gradle = "1.7.4"
 kordex = "2.3.6-SNAPSHOT"
 
 sentry = "8.23.0"
-sentry-gradle = "5.12.1"
+sentry-gradle = "5.12.2"
 
 [libraries]
 detekt = { module = "io.gitlab.arturbosch.detekt:detekt-formatting", version.ref = "detekt" }
